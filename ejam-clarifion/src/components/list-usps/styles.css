@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+.keen-slider {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 50px;
+
+  background: #252f3d;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.list-usps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: 50px;
+
+  background: #252f3d;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: fit-content;
+  height: fit-content;
+
+  font-family: "Manrope";
+  font-size: 12px;
+
+  color: white;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #fff;
+  cursor: pointer;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+.arrow--disabled {
+  fill: #868e96;
+}
