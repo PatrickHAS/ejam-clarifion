@@ -1,4 +1,5 @@
 import { StyledContainerProduct } from "./styles";
+import { FiArrowRight } from "react-icons/fi";
 
 const ContainerProduct = () => {
   return (
@@ -75,7 +76,7 @@ const ContainerProduct = () => {
             </p>
           </div>
           <button>
-            Yes - CLAIM MY DISCOUNT <img src={"line.png"} alt="" />
+            Yes - CLAIM MY DISCOUNT <FiArrowRight className="icon-white" />
           </button>
           <div className="options-card--container">
             <div className="free-secure--container">

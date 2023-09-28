@@ -556,19 +556,8 @@ export const StyledContainerProduct = styled.div`
 
       cursor: pointer;
 
-      img {
-        width: 18px;
-        height: 18px;
-
-        @media (max-width: 500px) {
-          width: 16px;
-          height: 16px;
-        }
-
-        @media (max-width: 400px) {
-          width: 14px;
-          height: 14px;
-        }
+      .icon-white {
+        color: white;
       }
 
       @media (max-width: 500px) {
